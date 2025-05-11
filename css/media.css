@@ -1,0 +1,451 @@
+
+/* ========== nav_bar-media ========== */
+
+@media (min-width:1200px) and (max-width:1400px){
+    .nav .container .nav-content .color-home::before{
+        left: 42.1%;
+    }
+    .nav .container .nav-content .color-chefs::before{
+        left: 48%;
+    }
+    .nav .container .nav-content .color-gallery::before{
+        left: 53.5%;
+    }
+    .nav .container .nav-content .color-contact::before{
+        left: 59.7%;
+    }
+}
+@media (max-width:1199px){
+    .color-home::before{
+        display: none !important;
+    }
+    .color-chefs::before{
+        display: none !important;
+    }
+    .color-gallery::before{
+        display: none !important;
+    }
+    .color-contact::before{
+        display: none !important;
+    }
+    .dark-mode{
+        .hamburger{
+            color: #fff;
+         }
+    }
+    .hamburger{
+        display: block;
+     }
+     .nav-content{
+        position: fixed;
+        z-index: 1000;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: calc(100vh - 70px);
+        background-color: #555;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        transition: right 0.3s ease;
+        gap: 20px;
+     }
+     .nav-content li{
+        margin: 30% 0;
+     }
+     .nav-content a{
+        padding: 40px 40px;
+     }
+     
+     #menu-toggle:checked ~ .nav-links{
+        right: 0;
+     }
+
+}
+
+/* ========== home_bage-media ========== */
+
+@media(min-width:1200px){
+    .home .container{
+        width: 85%;
+    }
+    .home .container .home-content{
+        width: 40%;
+    }
+    .home .container .home-img{
+        width: 40%;
+    }
+    .home{
+        height: 100vh;
+    }
+    .home .container .home-content .links{
+            width: 75%;
+}
+}
+@media (max-width:1199px){
+    .home .container{
+        width: 95%;
+    }
+    .home .container .home-content{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .home .container .home-img{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .home{
+        height: 100vh;
+    }
+    .home .container .home-content .links{
+        width: 100%;
+    }
+}
+@media (max-width:992px){
+    .home .container{
+        width: 85%;
+        padding-bottom: 10px;
+    }
+    .home .container .home-content{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .home .container .home-img{
+        width: 80%;
+        margin: 0 auto;
+        order: -1;
+    }
+    .home{
+        height: 110vh;
+    }
+    .home .container .home-content .links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .home .container .home-content .links .book-link{
+        border-radius: 20px 20px 20px 20px;
+    }
+}
+@media (max-width:768px){
+    .home .container{
+        width: 85%;
+        padding-bottom: 10px;
+    }
+    .home .container .home-content{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .home .container .home-img{
+        width: 80%;
+        margin: 0 auto;
+        order: -1;
+    }
+    .home{
+        height: 120vh;
+    }
+    .home .container .home-content .links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .home .container .home-content .links .book-link{
+        border-radius: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width:576px){
+    .home .container{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .home .container .home-content{
+        width: 100%;
+        text-align: center;
+    }
+    .home .container .home-content h1{
+        font-size: 60px;
+        margin-top: 0;
+    }
+    .home .container .home-content p{
+        font-size: 14.5px;
+    }
+    .home .container .home-img{
+        width: 100%;
+        order: -1;
+    }
+    .home{
+        height: 135vh;
+    }
+    .home .container .home-content .links{
+        width: 100%;
+    }
+    .home .container .home-content .links .book-link{
+        border-radius: 20px 20px 20px 20px;
+    }
+}
+
+/* ========== chef_section-media ========== */
+
+@media (max-width:992px) {
+    .chefs-section .container .chefs .chef-div{
+        width: 48%;
+        margin-bottom: 45px;
+    }
+    .chefs-section .container{
+       margin-top: 10%;
+    }   
+}
+@media (max-width:768px) {
+    .chefs-section .container .chefs .chef-div{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .chefs-section .container{
+       margin-top: 15%;
+    }
+}
+@media (max-width:576px) {
+    .chefs-section .container .chefs .chef-div{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .chefs-section .container{
+       margin-top: 23%;
+    }
+}
+
+/* ========== gallery-media ========== */
+
+@media (min-width:1200px){
+    .gallery-section .container .body{
+        column-gap: 16.5px;
+    }
+    .gallery-section .container .body .body-img{
+        width: 32.3%;
+    }
+}
+@media (min-width:993px) and (max-width:1199px){
+    .gallery-section .container .body{
+        column-gap: 14px;
+    }
+    .gallery-section .container .body .body-img{
+        width: 32.3%;
+    }
+}
+@media (min-width:769px) and (max-width:992px){
+    .gallery-section .container .body .body-img{
+        width: 48.4%;
+    }
+    .gallery-section .container .body .order2{
+        height: 100%;
+    }
+    .gallery-section .container .body .order1{
+        margin-top: -23.5%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-section .container .body .body-img .trans{
+        width: 40%;
+        position: absolute;
+        right: 7.9%;
+        transform: translateY(72%);
+    }
+}
+@media (max-width:768px) {
+    .gallery-section{
+        padding: 8% 0;
+    }
+    .gallery-section .container .body .body-img{
+        width: 100%;
+    }
+    .gallery-section .container .body .order1{
+        order: -1;
+    }
+    .gallery-section .container .body .order2{
+        order: -2;
+    }
+}
+@media (max-width:576px) {
+    .gallery-section{
+        padding: 8% 0;
+    }
+    .gallery-section .container .body .body-img{
+        width: 100%;
+    }
+    .gallery-section .container .body .order1{
+        order: -1;
+    }
+    .gallery-section .container .body .order2{
+        order: -2;
+    }
+}
+
+/* ========== contact-media ========== */
+
+@media (min-width:1200px){
+    .contact-section .container .information .about{
+        width: 46.4%;
+    }
+}
+@media (max-width:1199px){
+    .contact-section .container .information .about{
+        width: 45.9%;
+    }
+}
+@media (max-width:992px){
+    .contact-section .container .information .about{
+        width: 44.2%;
+    }
+    .contact-section .container .form .section .small-section{
+        width: 100%;
+    }
+    .contact-section .container .form .subject{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-section .container .form .send{
+        width: 20%;
+    }
+}
+@media (max-width:768px){
+    .contact-section .container .information .about{
+        width: 100%;
+    }
+    .contact-section .container .form .section .small-section{
+        width: 100%;
+    }
+    .contact-section .container .form .subject{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-section .container .form .send{
+         width: 20%;
+    }
+}
+@media (max-width:576px){
+    .contact-section .container .information .about{
+        width: 100%;
+    }
+    .contact-section .container .form .section .small-section{
+        width: 100%;
+    }
+    .contact-section .container .form .subject{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-section .container .form .send{
+        width: 20%;
+    }
+}
+
+/* ========== end_media ========== */
+
+@media (min-width:1200px){
+    .end-section .container{
+        column-gap: 10px;
+    }
+    .end-section .container .end1{
+        width: 24%;
+    }
+    .end-section .container .end1 .content .head{
+        width: 65%;
+    }
+    .end-section .container .end2{
+        width: 50%;
+    }
+    .end-section .container .end2 .form form {
+        width: 70%;
+    }
+    .end-section .container .end3{
+        width: 24%;
+    }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .end-section .container .end1{
+        width: 49%;
+        order: -2;
+    }
+    .end-section .container .end1 .content .head{
+        width: 45%;
+    }
+    .end-section .container .end2{
+        width: 100%;
+    }
+    .end-section .container .end3{
+        width: 49%;
+        order: -1;
+    } 
+}
+@media (min-width:769px) and (max-width:992px){
+    .end-section .container .end1{
+        width: 49%;
+        order: -2;
+    }
+    .end-section .container .end2{
+        width: 100%;
+    }
+    .end-section .container .end3{
+        width: 49%;
+        order: -1;
+    }
+}
+@media (min-width:577px) and (max-width:768px){
+    .end-section .container .end1{
+        width: 100%;
+    }
+    .end-section .container .end1 .content .head{
+        width: 30%;
+    }
+    .end-section .container .end1 .content .par p{
+        margin-top: 5px;
+    }
+    .end-section .container .end2{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .end-section .container .end2 .list h3{
+        margin-top: 10px;
+    }
+    .end-section .container .end2 .list .quick .quick-left{
+        width: 50%;
+    }
+    .end-section .container .end2 .list .quick .quick-right{
+        width: 50%;
+    }
+    .end-section .container .end3{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+@media (min-width:0px) and (max-width:576px) {
+    .end-section .container .end1{
+        width: 100%;
+    }
+    .end-section .container .end2{
+        width: 100%;
+    }
+    .end-section .container .end2 .form form {
+        width: 100%;
+    }
+    .end-section .container .end2 .form a{
+        width: 100%;
+    }
+    .end-section .container .end2 .list h3{
+        margin-top: 10px;
+    }
+    .end-section .container .end2 .list .quick .quick-left{
+        width: 50%;
+    }
+    .end-section .container .end2 .list .quick .quick-right{
+        width: 50%;
+    }
+    .end-section .container .end3{
+        width: 100%;
+    }
+}
