@@ -35,39 +35,7 @@
         </div>
       </div>
     </div>
-    <script>
-      const darkModeToggle = document.getElementById("darkModeToggle");
-      const body = document.body;
 
-      function loadThemePreference() {
-        const savedTheme = localStorage.getItem("theme");
-        if (savedTheme === "dark") {
-          body.classList.add("dark-mode");
-        }
-      }
-
-      function toggleDarkMode() {
-        body.classList.toggle("dark-mode");
-        const isDarkMode = body.classList.contains("dark-mode");
-        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        loadThemePreference();
-        darkModeToggle.addEventListener("click", toggleDarkMode);
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.querySelector(".hamburger");
-        const navLinks = document.querySelector(".nav-content");
-
-        hamburger.addEventListener("click", function () {
-          const isOpen = navLinks.style.right === "0px";
-          navLinks.style.right = isOpen ? "-100%" : "0px";
-        });
-      });
-    </script>
     <div class="home" id="home">
       <div class="container">
         <div class="home-content">
@@ -451,5 +419,38 @@
         </div>
       </div>
     </div>
+    <script>
+      const darkModeToggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      function loadThemePreference() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          body.classList.add("dark-mode");
+        }
+      }
+
+      function toggleDarkMode() {
+        body.classList.toggle("dark-mode");
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        loadThemePreference();
+        darkModeToggle.addEventListener("click", toggleDarkMode);
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-content");
+
+        hamburger.addEventListener("click", function () {
+          const isOpen = navLinks.style.right === "0px";
+          navLinks.style.right = isOpen ? "-100%" : "0px";
+        });
+      });
+    </script>
   </body>
 </html>
