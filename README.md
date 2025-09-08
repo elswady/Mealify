@@ -23,8 +23,8 @@ It includes modern features like *responsive design* and *dark mode toggle*.
 
 ## 📸 Screenshots
 ![Home Page](images/Mealify-screen/screen1.png)
-![Chefs Page](images/Mealify-screen/screen1.png)
-![Gallery Page](images/Mealify-screen/screen1.png)
-![Contact Information Page](images/Mealify-screen/screen1.png)
-![Contact Form Page](images/Mealify-screen/screen1.png)
-![Footer Page](images/Mealify-screen/screen1.png)
+![Chefs Page](images/Mealify-screen/screen2.png)
+![Gallery Page](images/Mealify-screen/screen3.png)
+![Contact Information Page](images/Mealify-screen/screen4.png)
+![Contact Form Page](images/Mealify-screen/screen5.png)
+![Footer Page](images/Mealify-screen/screen6.png)
